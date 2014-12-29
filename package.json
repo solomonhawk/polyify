@@ -1,0 +1,32 @@
+{
+  "name": "polyify",
+  "version": "0.0.1",
+  "description": "Autopolyfiller browserify transform.",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "dependencies": {
+    "autopolyfiller": "^1.6.0",
+    "merge": "^1.2.0",
+    "through": "^2.3.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "cd ./example/package-json-basic && npm test",
+    "test-cli": "cd ./example/package-json-cli-options && npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github:solomonhawk/polyify.git"
+  },
+  "keywords": [
+    "browserify",
+    "browserify-transform",
+    "autopolyfiller",
+    "polyify",
+    "polyfills"
+  ],
+  "author": "Solomon Hawk",
+  "license": "MIT"
+}
