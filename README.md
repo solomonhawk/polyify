@@ -49,7 +49,7 @@ var b = browserify({ entries: __dirname + '/index.js' });
 // apply the polyify transform, optionally passing in configuration
 b.transform(polyify({ browsers: 'IE >= 8' })); 
 
-// copmile and write out
+// compile and write out
 b.bundle().pipe(fs.createWriteStream('index-with-polyfills.js'))
 ```
 
@@ -58,7 +58,7 @@ b.bundle().pipe(fs.createWriteStream('index-with-polyfills.js'))
 ## API options
 
 #### browsers: Array
-An array of [Browser Matchers](https://github.com/ai/browserslist#queries)
+An array of [Browser Matchers](https://github.com/ai/browserslist#queries).
 
 #### include: Array
 An array of polyfills to include.

@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github:solomonhawk/polyify.git"
+    "url": "git@github.com:solomonhawk/polyify.git"
   },
   "keywords": [
     "browserify",
