@@ -1,13 +1,16 @@
 polyify
 =======
 
-WIP. Tests are in the works. Standard disclaimer, yada yada.
+**WIP. Tests are in the works. Standard disclaimer, yada yada.**
 
 A [Browserify](https://github.com/substack/node-browserify) transform for [Autopolyfiller](https://github.com/azproduction/autopolyfiller).
 
 # Usage
 
     $ npm install polyify --save-dev
+
+Find [Polyify on NPM](https://www.npmjs.com/package/polyify).
+
 
 ### package.json configuration
 
@@ -40,7 +43,7 @@ var browserify = require('browserify');
 var polyify    = require('polyify').configure;
 
 // path to bundle entry point
-var b = browserify({ entries: __dirname + /index.js }); 
+var b = browserify({ entries: __dirname + '/index.js' }); 
 
 // apply the polyify transform, optionally passing in configuration
 b.transform(polyify({ browsers: 'IE >= 8' })); 
